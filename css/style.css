@@ -131,14 +131,15 @@ article p{
 .espacios-container{
     display:flex;
     height:500px;
-
+    flex-wrap: wrap;
+    align-items: center;
     background-color: #E8FEFF;
+    overflow: visible;
 
 }
 .tarjeta-espacio{
     display: flex;
     flex-flow: column wrap;
-    
     height: 240px;
     width: 440px;
     border-radius: 10px;
@@ -154,6 +155,20 @@ article p{
 
 .tarjeta-espacio img{
     height: 200px;
+}
+.noticias{
+    display: flex;
+    gap: 20px;
+    background-color: #E8FEFF;
+    flex-wrap: wrap;
+}
+.tarjeta-noticia {
+    display:flex;
+    border-radius: 10px;
+    background-color: white;
+    height: 275px;
+    width: 600px;
+    margin:20px;
 }
 .footer {
     display:flex;
