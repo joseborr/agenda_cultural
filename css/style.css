@@ -5,6 +5,8 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 
 
@@ -26,12 +28,16 @@
 
 body{
     overflow-x: hidden;
+    background-image: url('../assets/img/orquesta.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #B4E9D3;
+    opacity: 0.8;
 }
 
 .nav-container {
@@ -40,7 +46,6 @@ header {
 
 }
 .fuente-logo {
-    font-family: 'Oswald';
     font-weight: bold;
     font-size: 32px;
 }
@@ -63,9 +68,11 @@ header {
     height: 80px;
     padding: 10px 0px 30px 10px;
     margin: 0px 0px 20px 10px;
+    font-family: 'Great Vibes', cursive;
 }
 
 .logo-abajo {
+    font-family: 'Great Vibes', cursive;
     font-size: 40px;
 }
 
@@ -86,15 +93,20 @@ header {
 }
 
 .main-index-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 100%;
+   
     
 }
+.carousel{
+    grid-column: 2/3;
+    max-width: 800px;
 
-.main{
-    grid-row: 2/3;
+}
+.carousel-item img{
+    object-fit: cover !important;
+   
 }
 
 .ubicacion-container {
@@ -287,9 +299,7 @@ article p {
     height: 136px;
     width: 136px;
     object-fit: cover;
-
 }
-
 .tarjeta-noticia.n2 img {
     height: 118px;
     width: 118px;
@@ -400,6 +410,7 @@ article p {
     bottom: auto;
     width: 100%;
     background-color: #B4E9D3;
+    opacity: 0.8;
     justify-content: center;
     align-items: center;
 }
