@@ -1,7 +1,7 @@
 .espacios-container {
     @include sizes(100%,100%);
     @include grid(1fr 1fr, 44% 44% 12%);
-    background-color: #E8FEFF;
+    background-color: rgba(232, 254, 255,0.8);
     .tarjeta-espacio {
         align-self: center;
         justify-self: center;

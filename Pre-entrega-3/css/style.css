@@ -113,7 +113,7 @@ header {
   grid-template-rows: 44% 44% 12%;
   justify-content: start;
   align-content: center;
-  background-color: #E8FEFF; }
+  background-color: rgba(232, 254, 255, 0.8); }
   .espacios-container .tarjeta-espacio {
     align-self: center;
     justify-self: center;
@@ -182,7 +182,7 @@ header {
     align-items: center;
     gap: 20px;
     padding-right: 20px;
-    background-color: #E8FEFF;
+    background-color: rgba(232, 254, 255, 0.8);
     font-family: sans-serif; }
     .grid-actividades .seccion-manana h3 {
       margin-right: 40px;
@@ -195,7 +195,7 @@ header {
 .noticias {
   display: flex;
   justify-content: space-around;
-  background-color: #E8FEFF;
+  background-color: rgba(232, 254, 255, 0.8);
   flex-wrap: wrap; }
   .noticias .tarjeta-noticia {
     display: flex;
