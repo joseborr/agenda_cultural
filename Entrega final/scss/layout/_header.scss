@@ -1,0 +1,58 @@
+header {
+    @include grid(1fr 1fr);
+    background-color: $bgc_header;
+    opacity: 0.8;
+    width: 100%;
+
+    .logotipo {
+        justify-self: flex-start;
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        height: 80px;
+        padding: 10px 0px 30px 10px;
+        margin: 0px 0px 20px 10px;
+        font-family: $fuente-logo;
+
+        img {
+            height: 70px;
+        }
+
+        .logo-texto {
+            .fuente-logo {
+                font-family: $fuente-logo;
+                font-weight: bold;
+                font-size: 32px;
+            }
+
+            .logo-abajo {
+                font-family: $fuente-logo;
+                font-size: 40px;
+            }
+        }
+    }
+
+    .nav-container {
+        align-self: center;
+        width: 100%;
+
+        .navbar {
+
+            font-family: 'Oswald', sans-serif;
+
+            li {
+                a {
+                    font-weight: bold;
+                    font-size: 20px;
+                    // text-decoration: none;
+                    color: #12209F !important;
+
+                    &:hover {
+                        color: #0a1258 !important;
+                    }
+                }
+            }
+        }
+    }
+}
