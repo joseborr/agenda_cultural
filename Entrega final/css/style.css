@@ -47,17 +47,14 @@ header {
     header .logotipo .logo-texto .logo-abajo {
       font-family: "Great Vibes", cursive;
       font-size: 40px; }
-  header .nav-container {
-    align-self: center;
-    width: 100%; }
-    header .nav-container .navbar {
-      font-family: 'Oswald', sans-serif; }
-      header .nav-container .navbar li a {
-        font-weight: bold;
-        font-size: 20px;
-        color: #12209F !important; }
-        header .nav-container .navbar li a:hover {
-          color: #0a1258 !important; }
+  header .nav-container .navbar {
+    font-family: 'Oswald', sans-serif; }
+    header .nav-container .navbar li a {
+      font-weight: bold;
+      font-size: 20px;
+      color: #12209F !important; }
+      header .nav-container .navbar li a:hover {
+        color: #0a1258 !important; }
 
 .footer {
   grid-row: 3/4;
@@ -269,12 +266,6 @@ header {
 @media (max-width: 991px) {
   header {
     grid-template-columns: 50% 50%; }
-  .navbar {
-    justify-content: space-between; }
-    .navbar li {
-      padding: 5px; }
-      .navbar li a {
-        font-size: 15px; }
   .logotipo {
     width: auto; } }
 
