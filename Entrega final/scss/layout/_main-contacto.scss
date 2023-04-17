@@ -1,4 +1,5 @@
 .grid-contacto {
+    grid-row: 2/3;
     @include sizes(100%,100%);
     @include grid(1fr, 44% 44% 12%);
     background-image: url('../assets/img/fondo-contacto.jpg');
@@ -29,6 +30,7 @@
             }
             .mensaje {
                 text-shadow: 2px 2px 3px white;
+                text-align: center;
                 font-size: 30px;
                 font-weight: bold;
             }

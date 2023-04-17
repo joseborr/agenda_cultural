@@ -1,5 +1,7 @@
 .footer {
     grid-row: 3/4;
+    grid-column: 1/2;
+    min-width: 100%;
     @include flex(row,center,center);
     @include sizes(100%,100%);
     position: relative;
