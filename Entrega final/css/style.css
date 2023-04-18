@@ -239,35 +239,48 @@ header nav .nav-container .navbar li a:hover {
   font-family: sans-serif;
 }
 .grid-actividades .seccion-hoy-actividades h3 {
+  align-self: center;
   margin-right: 40px;
   font-size: 50px;
-}
-.grid-actividades .seccion-hoy-actividades h4 {
-  font-size: 30px;
+  z-index: 1;
 }
 .grid-actividades .seccion-hoy-actividades img {
   width: 360px;
+  margin-bottom: 20px;
+}
+.grid-actividades .seccion-hoy-actividades article {
+  overflow-y: scroll;
+}
+.grid-actividades .seccion-hoy-actividades article h4 {
+  font-size: 30px;
 }
 .grid-actividades .seccion-manana {
   grid-row: 2/3;
   grid-column: 1/4;
   display: flex;
-  flex-wrap: column wrap;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: normal;
   gap: 20px;
-  padding-right: 20px;
+  flex-wrap: row wrap;
+  padding: 20px;
   background-color: rgba(232, 254, 255, 0.8);
   font-family: sans-serif;
 }
 .grid-actividades .seccion-manana h3 {
+  align-self: center;
   margin-right: 40px;
   font-size: 50px;
-}
-.grid-actividades .seccion-manana h4 {
-  font-size: 30px;
+  z-index: 1;
 }
 .grid-actividades .seccion-manana img {
-  width: 300px;
+  width: 360px;
+}
+.grid-actividades .seccion-manana article {
+  overflow-y: scroll;
+}
+.grid-actividades .seccion-manana article h4 {
+  font-size: 30px;
 }
 
 .noticias {
@@ -361,11 +374,23 @@ header nav .nav-container .navbar li a:hover {
 }
 
 @media (max-width: 991px) {
-  header {
-    grid-template-columns: 50% 50%;
-  }
   .logotipo {
     width: auto;
+  }
+  .grid-actividades .seccion-hoy-actividades article h4 {
+    font-size: 25px;
+  }
+  .grid-actividades .seccion-hoy-actividades article p {
+    font-size: 12px;
+  }
+  .grid-actividades .seccion-manana h3 {
+    font-size: 30px;
+  }
+  .grid-actividades .seccion-manana article h4 {
+    font-size: 25px;
+  }
+  .grid-actividades .seccion-manana article p {
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) {
@@ -391,6 +416,46 @@ header nav .nav-container .navbar li a:hover {
   }
   .main-index-container .carousel {
     width: 500px;
+  }
+  .grid-actividades .seccion-hoy-actividades {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../assets/img/cine.jpg);
+    background-size: contain;
+    background-position: center;
+  }
+  .grid-actividades .seccion-hoy-actividades h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 30px;
+  }
+  .grid-actividades .seccion-hoy-actividades img {
+    display: none;
+  }
+  .grid-actividades .seccion-hoy-actividades article {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    overflow: scroll;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .grid-actividades .seccion-manana {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
+    justify-content: center;
+    align-content: center;
+    overflow-y: scroll;
+  }
+  .grid-actividades .seccion-manana h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 30px;
+  }
+  .grid-actividades .seccion-manana img {
+    z-index: 0;
   }
 }
 @media (max-width: 580px) {

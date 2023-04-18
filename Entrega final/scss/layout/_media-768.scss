@@ -29,4 +29,39 @@
             width: 500px;
         }
     }
+    .grid-actividades {
+        .seccion-hoy-actividades {
+            @include grid(1fr, 10% 1fr,center,center);
+            background-image: url(../assets/img/cine.jpg);
+            background-size: contain;
+            background-position: center;
+            h3{
+                grid-column:1/2;
+                grid-row: 1/2;
+                font-size: 30px;
+            }
+            img{
+                display: none;
+            }
+            article{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                overflow: scroll;
+                text-shadow: 2px 2px 4px #000000;
+            }
+        }
+        .seccion-manana{
+            @include grid(1fr, 10% 1fr,center,center);
+            overflow-y: scroll;
+            h3{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-size: 30px;
+            }
+            img{
+                z-index: 0;
+            }
+        }
+        
+    }
 }
