@@ -44,9 +44,11 @@ header {
                         font-weight: bold;
                         font-size: 20px;
                         color: #12209F !important;
+                        transition: all 0.5s;
 
                         &:hover {
                             color: #0a1258 !important;
+                            transform: scale(1.1);
                         }
                     }
                 }
