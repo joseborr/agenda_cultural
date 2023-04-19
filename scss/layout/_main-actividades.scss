@@ -1,35 +1,41 @@
-.grid-actividades {
-    @include grid(1fr 1fr, 44% 50% 6%);
-    @include sizes(100%, 100%);
+.main-actividades {
+    height: 80vh;
 
-    .seccion-hoy-actividades {
-        grid-row: 1/2;
-        grid-column: 1/4;
-        @include flex(row, flex-start, $gap: 20px);
-        flex-wrap: row wrap;
-        padding: 30px;
-        background-color: #CF42CA;
-        color: white;
-        font-family: sans-serif;
-        h3 {
-            align-self: center   ;
-            margin-right: 40px;
-            font-size: 50px;
-            z-index: 1;
-        }
-        img {
+    .grid-actividades {
+        @include grid(1fr 1fr, 44% 50% 6%);
+        @include sizes(100%, 100%);
+
+        .seccion-hoy-actividades {
+            grid-row: 1/2;
+            grid-column: 1/4;
+            @include flex(row, flex-start, $gap: 20px);
+            flex-wrap: row wrap;
+            padding: 30px;
+            background-color: #CF42CA;
+            color: white;
+            font-family: sans-serif;
+
+            h3 {
+                align-self: center;
+                margin-right: 40px;
+                font-size: 50px;
+                z-index: 1;
+            }
+
+            img {
                 width: 360px;
 
-                
+
             }
-        article {
-            overflow-y: scroll;
-            
-            h4 {
-                font-size: 30px;
-            }  
+
+            article {
+                overflow-y: scroll;
+
+                h4 {
+                    font-size: 30px;
+                }
+            }
         }
-    }
 
         .seccion-manana {
             grid-row: 2/3;
@@ -39,23 +45,27 @@
             padding: 20px;
             background-color: rgba(232, 254, 255, 0.8);
             font-family: sans-serif;
+
             h3 {
                 align-self: center;
                 margin-right: 40px;
                 font-size: 50px;
                 z-index: 1;
             }
+
             img {
-                    width: 360px;
-                }
+                width: 360px;
+            }
+
             article {
                 overflow-y: scroll;
-                
+
                 h4 {
                     font-size: 30px;
                 }
-    
-                
-            }  
+
+
+            }
         }
+    }
 }

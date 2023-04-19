@@ -1,4 +1,5 @@
 .main-index-container {
+    height: 80vh;
     @include grid(1fr auto 1fr, 100%);
     .carousel{
         align-self: center;

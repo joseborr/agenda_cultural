@@ -1,54 +1,59 @@
-header {
-    @include grid(1fr 1fr);
-    background-color: $bgc_header;
-    opacity: 0.8;
-    width: 100%;
+.header-row {
+    margin-right: 0;
 
-    .logotipo {
-        justify-self: flex-start;
-        align-self: center;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        height: 80px;
-        padding: 10px 0px 30px 10px;
-        margin: 0px 0px 20px 10px;
-        font-family: $fuente-logo;
+    header {
+        @include grid(1fr 1fr);
+        background-color: $bgc_header;
+        opacity: 0.8;
+        width: 100%;
 
-        img {
-            height: 70px;
-        }
+        .logotipo {
+            justify-self: flex-start;
+            align-self: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            height: 80px;
+            padding: 10px 0px 30px 10px;
+            margin: 0px 0px 20px 10px;
+            font-family: $fuente-logo;
 
-        .logo-texto {
-            .fuente-logo {
-                font-family: $fuente-logo;
-                font-weight: bold;
-                font-size: 32px;
+            img {
+                height: 70px;
             }
 
-            .logo-abajo {
-                font-family: $fuente-logo;
-                font-size: 40px;
+            .logo-texto {
+                .fuente-logo {
+                    font-family: $fuente-logo;
+                    font-weight: bold;
+                    font-size: 32px;
+                }
+
+                .logo-abajo {
+                    font-family: $fuente-logo;
+                    font-size: 40px;
+                }
             }
         }
-    }
 
-    nav {
-        text-align: center;
-        .nav-container {
-            .navbar {
-                font-family: 'Oswald', sans-serif;
+        nav {
+            text-align: center;
 
-                li {
-                    a {
-                        font-weight: bold;
-                        font-size: 20px;
-                        color: #12209F !important;
-                        transition: all 0.3s;
+            .nav-container {
+                .navbar {
+                    font-family: 'Oswald', sans-serif;
 
-                        &:hover {
-                            color: #0a1258 !important;
-                            transform: scale(1.1);
+                    li {
+                        a {
+                            font-weight: bold;
+                            font-size: 20px;
+                            color: #12209F !important;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                color: #0a1258 !important;
+                                transform: scale(1.1);
+                            }
                         }
                     }
                 }
