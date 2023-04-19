@@ -7,7 +7,7 @@
         grid-column: 1/4;
         @include flex(row, flex-start, $gap: 20px);
         flex-wrap: row wrap;
-        padding: 20px;
+        padding: 30px;
         background-color: #CF42CA;
         color: white;
         font-family: sans-serif;
@@ -19,7 +19,8 @@
         }
         img {
                 width: 360px;
-                margin-bottom: 20px;
+
+                
             }
         article {
             overflow-y: scroll;

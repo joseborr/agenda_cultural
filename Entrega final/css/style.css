@@ -233,7 +233,7 @@ header nav .nav-container .navbar li a:hover {
   align-items: normal;
   gap: 20px;
   flex-wrap: row wrap;
-  padding: 20px;
+  padding: 30px;
   background-color: #CF42CA;
   color: white;
   font-family: sans-serif;
@@ -246,7 +246,6 @@ header nav .nav-container .navbar li a:hover {
 }
 .grid-actividades .seccion-hoy-actividades img {
   width: 360px;
-  margin-bottom: 20px;
 }
 .grid-actividades .seccion-hoy-actividades article {
   overflow-y: scroll;
@@ -374,6 +373,12 @@ header nav .nav-container .navbar li a:hover {
 }
 
 @media (max-width: 991px) {
+  .body {
+    background-image: url("../assets/img/orquesta-991.jpg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .logotipo {
     width: auto;
   }
@@ -393,7 +398,12 @@ header nav .nav-container .navbar li a:hover {
     font-size: 12px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 794px) {
+  .body {
+    background-image: url("../assets/img/orquesta-794.jpg.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+  }
   .logo img {
     height: 60px;
   }
@@ -448,14 +458,25 @@ header nav .nav-container .navbar li a:hover {
     justify-content: center;
     align-content: center;
     overflow-y: scroll;
+    background-image: url(../assets/img/recital.png);
+    background-size: cover;
+    background-position: center;
   }
   .grid-actividades .seccion-manana h3 {
+    color: whitesmoke;
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 30px;
   }
   .grid-actividades .seccion-manana img {
-    z-index: 0;
+    display: none;
+  }
+  .grid-actividades .seccion-manana article {
+    color: whitesmoke;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    overflow: scroll;
+    text-shadow: 2px 2px 4px #000000;
   }
 }
 @media (max-width: 580px) {
