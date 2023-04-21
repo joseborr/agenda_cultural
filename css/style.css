@@ -294,11 +294,12 @@ body {
     gap: 20px;
     padding: 10px; }
     .main-noticias .noticias .n2 .cuerpo article {
-      width: 420px; }
+      width: 100%; }
   .main-noticias .noticias .n2 img {
     height: 118px;
     width: 118px;
-    border-radius: 50%; }
+    object-fit: cover;
+    object-position: center; }
   .main-noticias .noticias .n3 .cuerpo {
     display: flex;
     flex-wrap: row wrap;
@@ -306,7 +307,7 @@ body {
     gap: 20px;
     padding: 10px; }
     .main-noticias .noticias .n3 .cuerpo article {
-      width: 400px; }
+      width: 100%; }
   .main-noticias .noticias .n3 img {
     height: 136px;
     width: 136px;

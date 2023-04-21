@@ -32,13 +32,15 @@
                 padding: 10px;
 
                 article {
-                    width: 420px;
+                    width: 100%;
                 }
             }
 
             img {
                 @include sizes(118px, 118px);
-                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+                // border-radius: 50%;
             }
         }
 
@@ -51,7 +53,7 @@
                 padding: 10px;
 
                 article {
-                    width: 400px;
+                    width: 100%;
                 }
             }
 
