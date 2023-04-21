@@ -13,8 +13,8 @@
     .main-espacios {
         .espacios-container {
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 15%;
-            overflow-y: scroll;
+            grid-auto-rows: auto;
+
             
             .tarjeta-espacio{
                 margin-top:10px;
