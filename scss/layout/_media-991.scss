@@ -1,4 +1,20 @@
 @media (max-width:991px) {
+    //HEADER
+    .header-row{
+        header {
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr;
+            .logotipo {
+                justify-self: center;
+                align-items: center;
+            }
+        }   
+    }
+    
+    .navbar {
+        flex-flow: column wrap;
+        align-items: center;
+    }
 
     .logotipo {
         width: auto;

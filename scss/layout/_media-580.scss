@@ -3,40 +3,24 @@
         background-image: url('../assets/img/orquesta-580.jpg');
         background-size: contain;
     }
-    //HEADER
-    header {
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
-    }
-    .logotipo {
-        justify-self: center;
-        align-items: center;
 
-    }
-    .navbar {
-        flex-flow: column wrap;
-        align-items: center;
-    }
-    //INDEX
+    //MAIN INDEX
     .main-index-container{
         overflow-y: scroll;
     }
 
-    //ESPACIOS
-
-    .espacios-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 15%;
-        overflow-y: scroll;
-        padding: 10px;
-    }
-
-    .tarjeta-espacio {
-        width: 300px;
-    }
-    //FOOTER
-    .footer p {
-        text-align: center;
+    //MAIN ESPACIOS
+    .main-espacios {
+        .espacios-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 15%;
+            overflow-y: scroll;
+            
+            .tarjeta-espacio{
+                margin-top:10px;
+                @include sizes(80%, 200px)
+            }
+        }
     }
 
     //MAIN ACTIVIDADES
@@ -63,6 +47,36 @@
             }
             }
         }
+    }
+    //MAIN CONTACTO
+    .main-contacto{
+        .grid-contacto{
+            .container-fluid {
+                .container {
+                    .tarjeta-contenedor {
+                        .tarjeta-contacto {
+                                .h3 {
+                                    font-size: 30px;
+                                }
+                                p{
+                                    font-size: 15px;
+                                }
+      
+                        }
+                    }
+                    .mensaje{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+
+    //FOOTER
+    .footer p {
+        text-align: center;
     }
 
 }

@@ -1,6 +1,5 @@
 @media (max-width: 794px) {
     .body{
-
         background-image: url('../assets/img/orquesta-794.jpg.jpg');
         background-position: cover;
         background-repeat: no-repeat;
@@ -16,9 +15,17 @@
             }
         }
     }
-    .tarjeta-espacio {
-        @include sizes(320px,150px);
+    .main-espacios{
+        .espacios-container{
+            .tarjeta-espacio {
+              
+                .descripcion{
+                    font-size: 15px;
+                }
+            }
+        }
     }
+    
     article p {
         font-size: 15px;
     }

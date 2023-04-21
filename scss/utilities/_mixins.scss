@@ -15,7 +15,7 @@
     $gap:$gap;
 }
 
-@mixin sizes($width, $height){
+@mixin sizes($width:auto, $height:auto){
     height: $height;
     width: $width;
 }
