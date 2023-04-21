@@ -41,7 +41,7 @@
         .seccion-hoy-actividades {
             @include grid(1fr, 10% 1fr,center,center);
             background-image: url(../assets/img/cine.jpg);
-            background-size: contain;
+            background-size: cover;
             background-position: center;
             h3{
                 grid-column:1/2;

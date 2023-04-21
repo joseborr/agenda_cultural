@@ -355,7 +355,9 @@ body {
   .grid-actividades .seccion-manana article h4 {
     font-size: 25px; }
   .grid-actividades .seccion-manana article p {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .main-espacios .espacios-container .tarjeta-espacio:hover {
+    transform: scale(1.1); } }
 
 @media (max-width: 794px) {
   .body {
@@ -385,7 +387,7 @@ body {
     justify-content: center;
     align-content: center;
     background-image: url(../assets/img/cine.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center; }
     .grid-actividades .seccion-hoy-actividades h3 {
       grid-column: 1/2;
@@ -429,19 +431,14 @@ body {
   header {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr; }
-  .main-index-container {
-    overflow-y: scroll; }
   .logotipo {
     justify-self: center;
     align-items: center; }
   .navbar {
     flex-flow: column wrap;
     align-items: center; }
-  .cartel-hoy h2 {
-    justify-content: center;
-    font-size: 25px; }
-  .cartel-hoy p {
-    visibility: hidden; }
+  .main-index-container {
+    overflow-y: scroll; }
   .espacios-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 15%;
@@ -451,60 +448,23 @@ body {
     width: 300px; }
   .footer p {
     text-align: center; }
-  .seccion-hoy {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15% 1fr 1fr; }
-  .cartel-hoy {
-    height: 75px;
-    width: 75px;
-    grid-row: 1 / 2;
-    margin-top: 10px; }
-  .articulo {
-    grid-column: 1/3;
-    grid-row: 2/4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
-    .articulo img {
-      grid-column: 2 / 3;
-      grid-row: 1/2;
-      width: 200px; }
-    .articulo article {
-      grid-row: 1 / 3;
-      grid-column: 1 / 3;
-      display: grid;
-      grid-template-columns: 1fr 10% 50%;
-      grid-template-rows: 1fr 1fr; }
-      .articulo article h3 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        padding: 2px; }
-      .articulo article p {
-        grid-column: 1/4;
-        grid-row: 2/3;
-        margin: 10px; }
-  .seccion-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
-    .seccion-info img {
-      grid-column: 1/ 2;
-      grid-row: 1 / 2; }
-    .seccion-info article {
-      grid-column: 1/3;
-      grid-row: 1/3;
-      display: grid;
-      grid-template-columns: 50% 10% 1fr;
-      grid-template-rows: 1fr 1fr; }
-      .seccion-info article h3 {
-        margin: 2px;
-        grid-column: 3/4;
-        grid-row: 1/2; }
-      .seccion-info article p {
-        grid-column: 1/4;
-        grid-row: 2/3; } }
+  .main-actividades .grid-actividades .seccion-hoy-actividades h3 {
+    font-size: 40px; }
+  .main-actividades .grid-actividades .seccion-hoy-actividades .article h4 {
+    font-size: 25px; }
+  .main-actividades .grid-actividades .seccion-manana h3 {
+    font-size: 40px; }
+  .main-actividades .grid-actividades .seccion-manana .article h4 {
+    font-size: 25px; } }
 
 @media (max-width: 480px) {
   .main-index-container .carousel {
-    width: 300px; } }
+    width: 300px; }
+  .main-actividades .grid-actividades .seccion-hoy-actividades h3 {
+    font-size: 30px; }
+  .main-actividades .grid-actividades .seccion-hoy-actividades .article h4 {
+    font-size: 20px; }
+  .main-actividades .grid-actividades .seccion-manana h3 {
+    font-size: 30px; }
+  .main-actividades .grid-actividades .seccion-manana .article h4 {
+    font-size: 20px; } }
