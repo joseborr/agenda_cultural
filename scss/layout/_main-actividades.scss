@@ -1,5 +1,7 @@
 .main-actividades {
     height: 80vh;
+    background-color: rgba(232, 254, 255, 0.8);
+    padding-bottom: 20px;
 
     .grid-actividades {
         @include grid(1fr 1fr, 44% 50% 6%);
@@ -43,7 +45,6 @@
             @include flex(row, flex-start, $gap: 20px);
             flex-wrap: row wrap;
             padding: 20px;
-            background-color: rgba(232, 254, 255, 0.8);
             font-family: sans-serif;
 
             h3 {
